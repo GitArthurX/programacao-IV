@@ -1,0 +1,149 @@
+/*Comando Global que deixa o site sem bordas e margens adicionais*/
+*{
+    margin: 0;
+    border: 0;
+}
+
+header{
+    background-color: #ff84a1;
+    text-align: center;
+    padding: 12px;
+}
+
+h1.pHeader{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: bold; /*Deixa o Texto em Negrito*/
+}
+
+header a{
+    text-decoration: none; /*Retira o sublinhado do texto*/
+    color: #FFFFFF;
+    font-weight: bold; /*Deixa o Texto em Negrito*/
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+}
+
+div.texto{
+    color: #FFFFFF;
+    background-color: #ffb2c6;
+    text-align: center;
+    font-weight: bold; /*Deixa o Texto em Negrito*/
+    padding: 46px;
+}
+
+div.principal{
+    background-color: #ffe1e9;
+    padding: 1%;
+}
+
+div.principal section.sobre{
+    background-color: #ffffff;
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px; /*Arredonda as bordas*/
+    box-shadow: 2px    4px     10px      0px     rgba(254, 211, 222); /*Cria sombras ao redor da caixa principal*/
+}
+
+div.principal section.sobre h3{
+    margin-bottom: 1%;
+}
+
+div.principal section.personagens h3{
+    text-align: start;
+}
+
+div.principal section.personagens{
+    background-color: #FFFFFF;
+    margin-bottom: 1%;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    border-radius: 15px; /*Arredonda as bordas*/
+    box-shadow: 2px    4px     10px      0px     rgba(254, 211, 222); /*Cria sombras ao redor da caixa principal*/
+}
+
+div.principal section.personagens div.infoPersonagens{
+    padding: 1%;
+    text-align: center;
+    background-color: #ffa7bd;
+    border-radius: 15px; /*Arredonda as bordas*/
+    margin: 1%;
+    width: 10%;
+    height: 10%;
+    display: inline-block; /*Deixa as blocos um do lado do outro*/
+}
+
+div.principal section.personagens div.infoPersonagens:hover{
+    transform: scale(1.05); /*Ao passar o mouse por cima aumenta o container em 5%*/
+}
+
+div.principal section.galeria h3{
+    text-align: start;
+    margin-bottom: 1%;
+}
+
+div.principal section.galeria{
+    background-color: #FFFFFF;
+    margin-bottom: 1%;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px; /*Arredonda as bordas*/
+    box-shadow: 2px    4px     10px      0px     rgba(254, 211, 222); /*Cria sombras ao redor da caixa principal*/
+    text-align: center;
+}
+
+div.principal section.galeria img{
+    border-radius: 15px; /*Arredonda as bordas*/
+    background-color: #ffa7bd;
+    margin: 1%;
+    width: 12%;
+    height: 12%;
+}
+
+div.principal section.galeria img:hover{
+    transform: scale(1.05); /*Ao passar o mouse por cima aumenta o container em 5%*/
+}
+
+div.principal section.clube{
+    background-color: #FFFFFF;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px; /*Arredonda as bordas*/
+    box-shadow: 2px    4px     10px      0px     rgba(254, 211, 222); /*Cria sombras ao redor da caixa principal*/
+}
+
+div.principal section.clube h3{
+    margin-bottom: 1%;
+}
+
+div.principal section.clube input, div.principal section.clube textarea{
+    border: 1px solid #ff84a1;
+    margin-top: 6px;
+    padding: 0.5%;
+    border-radius: 10px; /*Arredonda as bordas*/
+    width: 98.8%;
+}
+
+div.principal section.clube button{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    border-radius: 15px; /*Arredonda as bordas*/
+    color: #ffffff;
+    font-weight: bold; /*Deixa o Texto em Negrito*/
+    background: #ff84a1;
+}
+
+div footer{
+    background-color: #ff84a1;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1%;
+}
