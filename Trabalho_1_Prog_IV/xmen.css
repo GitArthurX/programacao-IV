@@ -1,0 +1,205 @@
+/*Comando Gloval responsável por deixa o site alinhado*/
+*{
+    margin: 0;
+    border: 0;
+    font-family: Nunito, sans-serif;
+}
+
+header{
+    background-color: #0F111A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+}
+
+header a{
+    text-decoration: none;
+    color: #ECC94B;
+    font-size: 130%;
+}
+
+header a:hover{
+    color: #D69E2E;
+}
+
+main section.SobreGeral{
+    background-color: #14161C;
+    color: #A0AEC0;
+    padding: 2%;
+}
+
+main section.SobreGeral div{
+   background-color: #282C34;
+   margin: 0.5%;
+   padding: 1%;
+   border-radius: 20px;
+}
+
+main section.Personagens{
+    background-color: #1A1D24;
+    color: #A0AEC0;
+    padding: 3%;
+}
+
+/*Bloco Css dos X-men Professores*/
+main .Personagens_Professores{
+    background-color: #12141D;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3%;
+    gap: 70px;
+}
+
+main .Personagens_Professores h1{
+    width: 100%;
+    margin-bottom: 0.5%;
+}
+
+main .Personagens .Personagens_Professores .Info_Personagens{
+    background-color: #282C34;
+    border: 10px solid #282C34;
+    box-shadow: 0 0 10px rgba(0, 85, 255, 1);
+    border-radius: 20px;
+    max-width: 16.7%;
+    cursor: pointer;
+}
+
+main .Personagens .Personagens_Professores .Info_Personagens h1{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+main .Personagens .Personagens_Professores .Info_Personagens img{
+    height: 250px;
+    width: 280px;
+    border-radius: 20px;
+}
+
+main .Personagens .Personagens_Professores .Info_Personagens p{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+/*Fim do Bloco Css dos X-men Professores*/
+
+/*Bloco Css dos X-men jovens*/
+main .EquipeXmen{
+    margin-top: 2% ;
+    background-color: #12141D;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3%;
+    gap: 70px;
+}
+
+main .EquipeXmen h1{
+    width: 100%;
+    margin-bottom: 0.5%;
+}
+
+main .Personagens .EquipeXmen .Personagens_Jovens{
+    background-color: #282C34;
+    border: 10px solid #282C34;
+    box-shadow: 0 0 10px rgba(0, 85, 255, 1);
+    border-radius: 20px;
+    max-width: 16.7%;
+    cursor: pointer;
+}
+
+main .Personagens .EquipeXmen .Personagens_Jovens h1{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+main .Personagens .EquipeXmen .Personagens_Jovens img{
+    height: 250px;
+    width: 280px;
+    border-radius: 20px;
+}
+
+main .Personagens .EquipeXmen .Personagens_Jovens p{
+     margin-top: 3%;
+     margin-bottom: 3%;
+     text-align: justify;
+}
+/*Fim do Bloco Css dos X-men jovens*/
+
+/*Bloco Css dos detalhes da série*/
+main .Detalhes_serie{
+    background-color: #12141D;
+    color: #A0AEC0;
+    padding: 3%;
+}
+
+main .Detalhes_serie .Informacoes_extra{
+    background-color: #282C34;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+main .Detalhes_serie .Informacoes_extra h2{
+   margin-bottom: 0.5%;
+}
+
+/*Linha de codigo importante, uma vez que ao utilizar comandos globais, para eu conseguir modificar a tabela foi necessário colocar esse comando para ignorar o comando global*/
+main .Detalhes_serie .Informacoes_extra .Tabela_Informacoes table{
+    border-collapse: collapse; /*Para a tabela, ignora o comando global*/
+}
+
+main .Detalhes_serie .Informacoes_extra .Tabela_Informacoes table, th, td{
+    border: 2px solid black;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+    
+/*Fim do Bloco Css dos detalhes da série*/
+
+/*Inicio Bloco Css dos comentarios*/
+main .Comentario{
+    background-color: #12141D;
+    padding: 3%;
+}
+
+main .Comentario h3{
+    color: #A0AEC0;
+    margin-bottom: 1%;
+}
+
+main .Comentario .secao_comentario{
+    background-color: #282C34;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+main.Comentario .secao_comentario, input, textarea{
+    width: 99.3%;
+    margin-top: 0.2%;
+    background-color: #A0AEC0;
+    padding: 0.5%;
+}
+
+main .Comentario .secao_comentario, input::placeholder, textarea::placeholder{
+    color: #12141D;
+}
+
+main .Comentario .secao_comentario button{
+    width: 100.3%;
+    background-color: #A0AEC0;
+    cursor: pointer;
+    padding: 0.5%;
+}
+/*Fim Bloco Css dos comentarios*/
+
+footer{
+    text-align: center;
+    background-color: #0A0B10;
+    padding: 1.5%;
+    color: #718096;
+}

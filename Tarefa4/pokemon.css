@@ -1,0 +1,33 @@
+/*Comando Global que deixa o site sem bordas e margens adicionais*/
+*{
+    margin: 0;
+    border: 0;
+}
+
+div.div_header{
+    text-align: center;
+    background-color: #aa7099;
+    padding: 1%;
+}
+
+body{
+    background-color: #a67ac9;
+}
+
+div.div_body div.controls{
+    padding: 1%;
+    text-align: center;
+}
+
+div.div_body div.controls input,  button,  select{
+    border-radius: 5px;
+    padding: 0.3%;
+}
+
+div.div_body div.controls input{
+    width: 10.5%;
+}
+
+div.div_body div.controls button{
+    color: #aa7099;
+}
