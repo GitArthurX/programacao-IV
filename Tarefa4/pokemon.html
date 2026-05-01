@@ -52,19 +52,24 @@
 
         function renderizar(lista) {
             pokedex.innerHTML = '';
-            
+    
             lista.forEach(p => {
-                const card = document.createElement('div');
-                card.classList.add('card');
-                
-                card.innerHTML = `
-                    ${p.name}
-                    ${p.types.map(t => t.type.name).join(', ')}
-                `;
-                
-                pokedex.appendChild(card);
-            });
-        }
+            const card = document.createElement('div');
+            card.classList.add('card');
+        
+        
+            const imageUrl = p.sprites.front_default;
+            const types = p.types.map(t => t.type.name).join(', ');
+        
+            card.innerHTML = `
+                <img src="${imageUrl}" alt="${p.name}" class="pokemon-img">
+                <h3 class="pokemon-name">${p.name}</h3>
+                <p class="pokemon-types">${types}</p>
+            `;
+        
+        pokedex.appendChild(card);
+    });
+}
 
         async function buscarPokemon() {
             const termo = document.getElementById('search').value.toLowerCase();
