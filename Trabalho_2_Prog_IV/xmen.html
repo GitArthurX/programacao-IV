@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="xmen.css">
+    <title>X-Men Evolution - Sistema Integrado</title>
+</head>
+<body>
+    
+    <!-- TELA DE LOGIN -->
+    <div id="tela-login" class="login-container">
+        <h2>Acesso à Mansão X</h2>
+        <form id="form-login">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Autenticar</button>
+        </form>
+        <p id="msg-erro" style="color: #ff4444; display: none; margin-top: 10px;">Acesso negado! Credenciais inválidas.</p>
+    </div>
+
+    <!-- SISTEMA PRINCIPAL (Inicia Oculto) -->
+    <div id="app-principal" style="display: none;">
+        <header>
+            <img class="img_header" src="Img/xmenlogo.png" alt="LogoXmen">
+            <a href="#SobreGeral">Geral</a>
+            <a href="#Painel_Gerenciamento">Gerenciar Cadastro</a>
+            <a href="#Personagens">Personagens Cadastrados</a>
+        </header>
+        <main>
+            <section class="SobreGeral" id="SobreGeral">
+                <div>
+                    <h1>Sobre</h1>
+                    <br>
+                    <p>Wiki Temática e Sistema de Gerenciamento dos X-Men Evolution. Cadastre dinamicamente Professores, X-Men (Jovens) e Vilões.</p>
+                </div>
+            </section>
+
+            <section class="Gerenciamento" id="Painel_Gerenciamento">
+                <div class="secao_formulario">
+                    <h3>Cadastrar Novo Personagem</h3>
+                    <div class="formulario">
+                        <form id="form-personagem">
+                            <input type="text" id="titulo" placeholder="Nome do Personagem (Título)" required>
+                            <br>
+                            <textarea id="conteudo" placeholder="Biografia e Poderes (Conteúdo)" required></textarea>
+                            <br>
+                            <input type="url" id="imagem" placeholder="URL da Imagem" required>
+                            <br>
+                            <input type="number" id="ordem" placeholder="Nível/Ordem de Apresentação" required>
+                            <br>
+                            <select id="categoria" required>
+                                <option value="" disabled selected>Selecione a Categoria...</option>
+                                <option value="Professor">Professor</option>
+                                <option value="Mutante">X-Men (Jovem)</option>
+                                <option value="Vilao">Vilão</option>
+                            </select>
+                            <br>
+                            <button type="submit" id="botao-salvar">Salvar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Personagens" id="Personagens">
+                <h1>Professores</h1>
+                <div class="Container_Personagens" id="lista-professores"></div>
+                
+                <h1 class="separador-titulo">Equipe X-Men (Jovens)</h1>
+                <div class="Container_Personagens" id="lista-mutantes"></div>
+                
+                <h1 class="separador-titulo">Vilões e Irmandade</h1>
+                <div class="Container_Personagens" id="lista-viloes"></div>
+            </section>
+        </main>
+        <footer class="rodape" id="rodape">
+            <h1>Trabalho de Prog IV</h1>
+            <h2>Integração Front-end e Back-end (NestJS + TypeORM)</h2>
+        </footer>
+    </div>
+    
+    <script src="xmen.js"></script>
+</body>
+</html>
